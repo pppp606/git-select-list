@@ -72,15 +72,15 @@ draw_menu() {
   for i in "${!options[@]}"; do
     if [ $i -eq $current ]; then
       if [[ " ${selected[@]} " =~ " ${options[$i]} " ]]; then
-        echo -e "  [x] > ${options[$i]}"
+        echo "  [x] > ${options[$i]}"
       else
-        echo -e "  [ ] > ${options[$i]}"
+        echo "  [ ] > ${options[$i]}"
       fi
     else
       if [[ " ${selected[@]} " =~ " ${options[$i]} " ]]; then
-        echo -e "  [x]   ${options[$i]}"
+        echo "  [x]   ${options[$i]}"
       else
-        echo -e "  [ ]   ${options[$i]}"
+        echo "  [ ]   ${options[$i]}"
       fi
     fi
   done
