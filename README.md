@@ -2,7 +2,7 @@
 
 `git-select-list` is a tool to interactively perform Git operations. It allows you to select files or stashes from a list for actions like `git add`, `git stash`, `git stash apply`, and `git stash drop`.
 
-https://github.com/user-attachments/assets/a8c78d88-5197-4eee-9d2a-c929c6b1411e
+https://github.com/user-attachments/assets/58c5fe79-cdff-4cbf-8bb4-02c4af767575
 
 ## Features
 
