@@ -4,6 +4,12 @@
 
 https://github.com/user-attachments/assets/58c5fe79-cdff-4cbf-8bb4-02c4af767575
 
+### 🎯 Who Is This Tool For?
+
+This tool is designed for users who find Git's interactive mode insufficient but do not need advanced features.
+If you require more powerful features, we recommend using tools like `tig`. Alternatively, you can utilize Git's standard `-i` option for entering interactive mode.
+`git-select-list` is a lightweight solution for those looking for a balance between simplicity and usability.
+
 ## ✨ Features
 
 - **Interactive UI**: Navigate with arrow keys, select with `a` or `s`, and toggle all with `u`.
