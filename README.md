@@ -1,20 +1,18 @@
-# Git Select List
+# 📋 Git Select List
 
 `git-select-list` is a tool to interactively perform Git operations. It allows you to select files or stashes from a list for actions like `git add`, `git stash`, `git stash apply`, and `git stash drop`.
 
-https://github.com/user-attachments/assets/a8c78d88-5197-4eee-9d2a-c929c6b1411e
+https://github.com/user-attachments/assets/58c5fe79-cdff-4cbf-8bb4-02c4af767575
 
-## Features
+## ✨ Features
 
-- **Interactive UI**: Navigate with arrow keys, select with `a`, and toggle all with `u`.
+- **Interactive UI**: Navigate with arrow keys, select with `a` or `s`, and toggle all with `u`.
 - **Multiple Actions**: Supports `git add`, `git stash`, `git stash apply`, and `git stash drop`.
 - **Lightweight Setup**: No external dependencies, with an included setup script.
 
 ---
 
-## Setup
-
-### Steps
+## 🔨 Setup
 
 1. Clone this repository:
    ```bash
@@ -31,13 +29,46 @@ https://github.com/user-attachments/assets/a8c78d88-5197-4eee-9d2a-c929c6b1411e
 
 ---
 
-## Usage
+## 💻 Usage
 
 ### Command Format
 
 ```bash
 git ls <action> [subaction]
 ```
+
+### Examples
+
+#### Stage Files
+1. Run the following command:
+   ```bash
+   git ls add
+   ```
+2. Select files from the displayed list using `a` or `u`, then press `Enter`.
+3. The selected files will be staged.
+
+#### Stash Files
+1. Run the following command:
+   ```bash
+   git ls stash
+   ```
+2. Select files from the displayed list using `a` or `u`, then press `Enter`.
+3. The selected files will be stashed.
+
+#### Apply a Stash
+1. Run the following command:
+   ```bash
+   git ls stash apply
+   ```
+2. Select a stash from the displayed list and press `Enter`.
+
+#### Drop a Stash
+1. Run the following command:
+   ```bash
+   git ls stash drop
+   ```
+2. Select a stash from the displayed list and press `Enter`.
+
 
 ### Supported Actions and Subactions
 
@@ -50,7 +81,7 @@ git ls <action> [subaction]
 
 ---
 
-### Key Bindings
+### ⌨️ Key Bindings
 
 - **Arrow Keys**: Navigate between items.
 - **`a` or `s` Key**: Select or deselect the current item.
@@ -59,41 +90,7 @@ git ls <action> [subaction]
 
 ---
 
-## Examples
-
-### Stage Files
-1. Run the following command:
-   ```bash
-   git ls add
-   ```
-2. Select files from the displayed list using `a` or `u`, then press `Enter`.
-3. The selected files will be staged.
-
-### Stash Files
-1. Run the following command:
-   ```bash
-   git ls stash
-   ```
-2. Select files from the displayed list using `a` or `u`, then press `Enter`.
-3. The selected files will be stashed.
-
-### Apply a Stash
-1. Run the following command:
-   ```bash
-   git ls stash apply
-   ```
-2. Select a stash from the displayed list and press `Enter`.
-
-### Drop a Stash
-1. Run the following command:
-   ```bash
-   git ls stash drop
-   ```
-2. Select a stash from the displayed list and press `Enter`.
-
----
-
-## Troubleshooting
+## ⚠️ Troubleshooting
 
 1. **`git ls` is not recognized**:
    - Ensure you ran `setup.sh` to configure the alias.
@@ -108,7 +105,7 @@ git ls <action> [subaction]
 
 ---
 
-## Uninstallation
+## 🗑️ Uninstallation
 
 1. Remove the alias:
    ```bash
@@ -122,7 +119,7 @@ git ls <action> [subaction]
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
