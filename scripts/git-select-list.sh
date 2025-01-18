@@ -67,7 +67,7 @@ tput civis
 draw_menu() {
   clear
   echo ""
-  echo "Use ↑/↓ to move, 'a' to select, 'u' to select all, and Enter or Space to confirm."
+  echo "Use ↑/↓ to move, 'a' or 's' to select, 'u' to select all, and Enter or Space to confirm."
   echo ""
   for i in "${!options[@]}"; do
     if [ $i -eq $current ]; then
@@ -112,6 +112,9 @@ handle_input() {
       esac
       ;;
     "a")
+      toggle_selection "${options[$current]}"
+      ;;
+    "s")
       toggle_selection "${options[$current]}"
       ;;
     "u")

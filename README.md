@@ -27,7 +27,7 @@ https://github.com/user-attachments/assets/a8c78d88-5197-4eee-9d2a-c929c6b1411e
    bash setup.sh
    ```
 
-3. After setup, you can use the `git sl` command.
+3. After setup, you can use the `git ls` command.
 
 ---
 
@@ -36,26 +36,26 @@ https://github.com/user-attachments/assets/a8c78d88-5197-4eee-9d2a-c929c6b1411e
 ### Command Format
 
 ```bash
-git sl <action> [subaction]
+git ls <action> [subaction]
 ```
 
 ### Supported Actions and Subactions
 
 | Command                 | Description                                           |
 |-------------------------|-------------------------------------------------------|
-| `git sl add`            | Interactively select modified files to stage.         |
-| `git sl stash`          | Interactively select modified files to stash.         |
-| `git sl stash apply`    | Interactively select stashes to apply.                |
-| `git sl stash drop`     | Interactively select stashes to drop.                 |
+| `git ls add`            | Interactively select modified files to stage.         |
+| `git ls stash`          | Interactively select modified files to stash.         |
+| `git ls stash apply`    | Interactively select stashes to apply.                |
+| `git ls stash drop`     | Interactively select stashes to drop.                 |
 
 ---
 
 ### Key Bindings
 
 - **Arrow Keys**: Navigate between items.
-- **`a` Key**: Select or deselect the current item.
+- **`a` or `s` Key**: Select or deselect the current item.
 - **`u` Key**: Select or deselect all items.
-- **`Enter` and `Space` Key**: Confirm the selection.
+- **`Enter` or `Space` Key**: Confirm the selection.
 
 ---
 
@@ -64,7 +64,7 @@ git sl <action> [subaction]
 ### Stage Files
 1. Run the following command:
    ```bash
-   git sl add
+   git ls add
    ```
 2. Select files from the displayed list using `a` or `u`, then press `Enter`.
 3. The selected files will be staged.
@@ -72,7 +72,7 @@ git sl <action> [subaction]
 ### Stash Files
 1. Run the following command:
    ```bash
-   git sl stash
+   git ls stash
    ```
 2. Select files from the displayed list using `a` or `u`, then press `Enter`.
 3. The selected files will be stashed.
@@ -80,14 +80,14 @@ git sl <action> [subaction]
 ### Apply a Stash
 1. Run the following command:
    ```bash
-   git sl stash apply
+   git ls stash apply
    ```
 2. Select a stash from the displayed list and press `Enter`.
 
 ### Drop a Stash
 1. Run the following command:
    ```bash
-   git sl stash drop
+   git ls stash drop
    ```
 2. Select a stash from the displayed list and press `Enter`.
 
@@ -95,11 +95,11 @@ git sl <action> [subaction]
 
 ## Troubleshooting
 
-1. **`git sl` is not recognized**:
+1. **`git ls` is not recognized**:
    - Ensure you ran `setup.sh` to configure the alias.
    - Check if the alias is set:
      ```bash
-     git config --global --get alias.sl
+     git config --global --get alias.ls
      ```
 
 2. **Script doesn't work**:
@@ -112,7 +112,7 @@ git sl <action> [subaction]
 
 1. Remove the alias:
    ```bash
-   git config --global --unset alias.sl
+   git config --global --unset alias.ls
    ```
 
 2. Delete the repository:

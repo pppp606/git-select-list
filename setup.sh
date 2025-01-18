@@ -10,8 +10,8 @@ fi
 chmod +x "$SCRIPT_PATH"
 echo "Made $SCRIPT_PATH executable."
 
-git config --global alias.sl "!sh $(pwd)/$SCRIPT_PATH"
-echo "Git alias 'git sl' has been configured."
+git config --global alias.ls "!sh $(pwd)/$SCRIPT_PATH"
+echo "Git alias 'git ls' has been configured."
 
 echo "Setup complete 🎉🎉🎉🎉🎉🎉"
-echo "You can now use 'git sl' to interactively select files to add and stash."
+echo "You can now use 'git ls' to interactively select files to add and stash."
